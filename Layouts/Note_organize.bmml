@@ -1,0 +1,58 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1492" measuredH="711" mockupW="1383" mockupH="701">
+  <controls>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="109" y="10" w="1383" h="701" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>University/College%20Notes%20Upload%20Page</text>
+        <value>83</value>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::ComboBox" x="120" y="113" w="-1" h="-1" measuredW="180" measuredH="78" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>What%20kind%20of%20note%20is%20this%3F%0ALecture%0ALab%0APersonal</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::VRule" x="350" y="107" w="-1" h="289" measuredW="10" measuredH="100" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Calendar" x="424" y="113" w="-1" h="-1" measuredW="96" measuredH="96" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Alert" x="368" y="239" w="-1" h="-1" measuredW="257" measuredH="36" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Please%20Time%20Stamp%20your%20note%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::VRule" x="652" y="107" w="-1" h="289" measuredW="10" measuredH="100" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Alert" x="662" y="113" w="-1" h="-1" measuredW="241" measuredH="36" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Any%20final%20Comments%20to%20add%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Button" x="678" y="241" w="-1" h="-1" measuredW="44" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Yes</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Button" x="780" y="241" w="-1" h="-1" measuredW="38" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>No</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::VRule" x="929" y="107" w="-1" h="289" measuredW="10" measuredH="100" zOrder="9" locked="false" isInGroup="-1"/>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Alert" x="943" y="104" w="292" h="117" measuredW="300" measuredH="117" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Can%20Everyone%20View%20this%20document%3F%0AYes%0ANo</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::VRule" x="1264" y="107" w="-1" h="289" measuredW="10" measuredH="100" zOrder="11" locked="false" isInGroup="-1"/>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Alert" x="1277" y="109" w="-1" h="-1" measuredW="200" measuredH="117" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Enable%20Comments%3F%0AYes%0ANo</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::HRule" x="167" y="417" w="1173" h="-1" measuredW="100" measuredH="10" zOrder="13" locked="false" isInGroup="-1"/>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Button" x="732" y="507" w="136" h="52" measuredW="110" measuredH="27" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <state>disabled</state>
+        <text>Sweet%21%20Submit%21</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

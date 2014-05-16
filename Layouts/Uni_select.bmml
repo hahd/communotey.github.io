@@ -1,0 +1,44 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1071" measuredH="679" mockupW="958" mockupH="673">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="113" y="6" w="958" h="673" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>What%20University/College%20is%20your%20Document%20from%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Accordion" x="140" y="98" w="-1" h="-1" measuredW="150" measuredH="267" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Province%3F%0AOntario%0AManitoba%0ABC%0ANewfoundland%0AQuebec%0ANova%20Scotia</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::VRule" x="313" y="98" w="-1" h="275" measuredW="10" measuredH="100" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Accordion" x="333" y="99" w="-1" h="-1" measuredW="150" measuredH="213" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>University%3F%0AUOFT%0AWaterloo%0AMcGill%0AMac</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::VRule" x="499" y="98" w="-1" h="275" measuredW="10" measuredH="100" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Accordion" x="524" y="99" w="-1" h="-1" measuredW="150" measuredH="348" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Department%3F%0AEngineering%0A-SE%0A-ME%0A-CE%0A-EE%0AScience%0A-Life%0AHumanitites%0ABusiness</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::VRule" x="687" y="98" w="-1" h="275" measuredW="10" measuredH="100" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Accordion" x="715" y="100" w="-1" h="-1" measuredW="150" measuredH="105" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Course%20Code%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::VRule" x="877" y="98" w="-1" h="275" measuredW="10" measuredH="100" zOrder="8" locked="false" isInGroup="-1"/>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Button" x="930" y="181" w="-1" h="-1" measuredW="98" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Set%3F%20Submit%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::HRule" x="204" y="473" w="749" h="-1" measuredW="100" measuredH="10" zOrder="10" locked="false" isInGroup="-1"/>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Button" x="350" y="541" w="456" h="54" measuredW="456" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>OR%2C%20Upload%20your%20own%20note%20to%20teach%20something%20entirely%20new%20and%20awesome%21</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

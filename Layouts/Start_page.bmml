@@ -1,0 +1,35 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1032" measuredH="289" mockupW="730" mockupH="243">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Alert" x="570" y="46" w="-1" h="-1" measuredW="219" measuredH="117" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Hello%21%0A%20%0AWhat%20whould%20you%20like%20to%20do%20today%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="302" y="224" w="179" h="65" measuredW="88" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>LightBulbIcon%7Csmall</icon>
+        <state>focused</state>
+        <text>Learn%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Button" x="827" y="216" w="205" h="67" measuredW="205" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>AddCommentIcon%7Csmall</icon>
+        <state>focused</state>
+        <text>Help%20Others%20Learn/Upload</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Arrow" x="786" y="109" w="-1" h="-1" measuredW="150" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>top</direction>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Arrow" x="404" y="115" w="158" h="101" measuredW="150" measuredH="100" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>bottom</direction>
+        <text/>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
