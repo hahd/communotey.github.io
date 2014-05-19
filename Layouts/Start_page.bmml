@@ -1,6 +1,6 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1278" measuredH="1153" mockupW="1042" mockupH="1144">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1278" measuredH="1479" mockupW="1042" mockupH="1470">
   <controls>
-    <control controlID="5" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="236" y="9" w="1042" h="1144" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="236" y="9" w="1042" h="1470" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
         <text>communote%20-%20the%20open%20educational%20resources%20database</text>
       </controlProperties>
@@ -32,9 +32,9 @@
         <text>browse.</text>
       </controlProperties>
     </control>
-    <control controlID="17" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="1077" y="201" w="-1" h="-1" measuredW="200" measuredH="182" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="1077" y="201" w="-1" h="-1" measuredW="200" measuredH="212" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>search.%0Abrowse.%0Aupload.%0Acreate.</text>
+        <text>search.%0Abrowse.%0Aupload.%0Acreate.%0Arank.</text>
       </controlProperties>
     </control>
     <control controlID="18" controlTypeID="com.balsamiq.mockups::Button" x="239" y="515" w="1038" h="289" measuredW="60" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
@@ -59,10 +59,21 @@
         <text>create.</text>
       </controlProperties>
     </control>
-    <control controlID="24" controlTypeID="com.balsamiq.mockups::HRule" x="284" y="1091" w="960" h="-1" measuredW="100" measuredH="10" zOrder="15" locked="false" isInGroup="-1"/>
-    <control controlID="25" controlTypeID="com.balsamiq.mockups::LinkBar" x="537" y="1101" w="-1" h="-1" measuredW="440" measuredH="19" zOrder="16" locked="false" isInGroup="-1">
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::HRule" x="277" y="1408" w="960" h="-1" measuredW="100" measuredH="10" zOrder="15" locked="false" isInGroup="-1"/>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::LinkBar" x="544" y="1423" w="-1" h="-1" measuredW="440" measuredH="19" zOrder="16" locked="false" isInGroup="-1">
       <controlProperties>
         <text>accounts%2C%20advertise%2C%20careers%2C%20contact%2C%20donate%2C%20source%2C%20suggest</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::VSplitter" x="236" y="1091" w="1042" h="-1" measuredW="100" measuredH="11" zOrder="17" locked="false" isInGroup="-1"/>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Button" x="237" y="1101" w="1041" h="307" measuredW="61" measuredH="27" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Button</text>
+      </controlProperties>
+    </control>
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::SubTitle" x="277" y="1117" w="-1" h="-1" measuredW="52" measuredH="27" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>rank.</text>
       </controlProperties>
     </control>
   </controls>
