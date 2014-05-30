@@ -1,0 +1,80 @@
+<!DOCTYPE html><!--little note on the side if you are using a chrome browser you can open the css source code using , 'ctrl+u'-->
+<!--Note that this is code for the front page -->
+<html lang="en">
+	<head>
+	<title>Communote</title>
+	<!-- Bootstrap core CSS, link to important buttons and functions-->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+	
+	<!--Custom CSS used for the site-->
+	<link href="/css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	
+	<body class="greenBack">
+	<!--Communote Title-->
+		<section>
+		<h1 class='center'>Communote</h1>
+		</section>
+	<!--Search Section-->
+		<section>
+		<form class="navbar-form center" role="search"> <!--BootStrap search Options http://getbootstrap.com/components/#navbar-forms-->
+		<div class="form-group">
+			  <input type="text" class="form-control size150" placeholder="Search">
+			  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+		</div>
+		</form>
+		</section>
+	<!--Button Section-->	
+		<section><!--Temporary JQeury Buttons--><!--need design of buttons etc-->
+			<a class="blackColour">
+				<h1 class='center purpleGradient sizeCustomButton' onclick= "toggle(expandBrowse)" >Browse</h1>
+			</a>
+				<div class='center' id='expandBrowse'>
+				<p>This is a place Holder</p>
+				</div>
+			<a class="blackColour">
+				<h1 class='center purpleGradient' onclick= "toggle(expandUpload)" >Upload</h1>
+			</a>
+				<div  class='center' id='expandUpload'>
+				<p>This is a place Holder</p>
+				</div>
+			<a class="blackColour">
+				<h1 class='center purpleGradient' onclick= "toggle(expandCreate)">Create</h1>
+			</a>
+				<div class='center' id='expandCreate'>
+				<p>This is a place Holder</p>
+				</div>
+			<a class="blackColour">
+				<h1 class='center purpleGradient' onclick= "toggle(expandRank)">Rank</h1>
+			</a>
+				<div class='center' id='expandRank'>
+				<p>This is a place Holder</p>
+				</div>
+		</section>
+		
+
+	
+	
+<!--Bottom Row of site-->
+	<footer>
+	<nav class="navbar navbar-default navbar-fixed-bottom purpleGradient" role="navigation">
+	  <div class="container center">
+		<a href="https://status.github.com/">Status |</a>
+		  <a href="http://developer.github.com">API  |</a>
+		  <a href="http://training.github.com">Training  |</a>
+		  <a href="http://shop.github.com">Shop |</a>
+		  <a href="/blog">Blog |</a>
+		  <a href="/about">About</a>
+	  </div>
+	 </nav>
+	</footer>
+	
+	
+<!--Link to some JavaScript-->	
+	<script src="/js/jquery.js"></script>
+	<script src="/js/custom.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	
+	</body>
+</html>
