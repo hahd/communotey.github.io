@@ -20,45 +20,37 @@
 		<section>
 		<form class="navbar-form center" role="search"> <!--BootStrap search Options http://getbootstrap.com/components/#navbar-forms-->
 		<div class="form-group">
-			  <input type="text" class="form-control size150" placeholder="Search">
-			  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+			<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+			<input type="text" class="form-control" size="150"  placeholder="Search">
+			  
 		</div>
 		</form>
 		</section>
-	<!--Button Section-->	
-		<section><!--Temporary JQeury Buttons--><!--need design of buttons etc-->
-			<a class="blackColour">
-				<h1 class='center purpleGradient sizeCustomButton' onclick= "toggle(expandBrowse)" >Browse</h1>
-			</a>
-				<div class='center' id='expandBrowse'>
-				<p>This is a place Holder</p>
-				</div>
-			<a class="blackColour">
-				<h1 class='center purpleGradient' onclick= "toggle(expandUpload)" >Upload</h1>
-			</a>
-				<div  class='center' id='expandUpload'>
-				<p>This is a place Holder</p>
-				</div>
-			<a class="blackColour">
-				<h1 class='center purpleGradient' onclick= "toggle(expandCreate)">Create</h1>
-			</a>
-				<div class='center' id='expandCreate'>
-				<p>This is a place Holder</p>
-				</div>
-			<a class="blackColour">
-				<h1 class='center purpleGradient' onclick= "toggle(expandRank)">Rank</h1>
-			</a>
-				<div class='center' id='expandRank'>
-				<p>This is a place Holder</p>
-				</div>
-		</section>
-		
-
+	<!--Button Section--><!--Note that the size of the image will affect the way in which the columns form-->
+	<!--BootStrap also fails to offer methods to split rows which will have to be emulated by the image-->
+	<div class='container center'> <!--Optimal size is width 480 and height 250-->
+		<div class="row"> <!--Also image with NO BACKGROUND as the grid system does not have spacing between rows as CSS just sucks with relational system only working right to left-->
+			<div class="col-lg-6">
+				<img src="/images/emolga.png" alt="...">
+			</div>
+			<div class="col-lg-6">
+				<img src="/images/emolga.png" alt="...">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<img src="/images/emolga.png" alt="...">
+			</div>
+			<div class="col-lg-6">
+				<img src="/images/emolga.png" alt="...">
+			</div>
+		</div>
+	</div>
 	
 	
 <!--Bottom Row of site-->
 	<footer>
-	<nav class="navbar navbar-default navbar-fixed-bottom purpleGradient" role="navigation">
+	<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
 	  <div class="container center">
 		<a href="https://status.github.com/">Status |</a>
 		  <a href="http://developer.github.com">API  |</a>
