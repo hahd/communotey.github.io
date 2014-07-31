@@ -68,7 +68,7 @@ and the HTML object in htmlObj.
 
 var pObj = new PDFObject({ 
 
-	url: "http://pdfobject.com/pdf/sample.pdf",
+	url: "t1sol.pdf",
 	id: "myPDF",
 	
 	pdfOpenParams: {
@@ -110,7 +110,7 @@ function embed(){
 window.onload = function (){
 
 	var s = document.getElementById("statement");
-	var msg;
+	var msg = "The PDF was successfully embedded";
 	
 	if(pObj){
 	
