@@ -110,15 +110,14 @@ function embed(){
 window.onload = function (){
 
 	var s = document.getElementById("statement");
-	var msg = "This is not working";
+	var msg;
 	
 	if(pObj){
 	
 		var plugintype = pObj.get("pluginTypeFound");
-		msg = "Type of PDF plugin found: " +plugintype;
 		
 		if(plugintype){
-			msg += "<br/><a href='#' onclick='embed(); return false;'>Click here to embed the PDF!</a>";
+			embed();
 		} else {
 			msg += "<br/>Looks like we won't be able to embed your PDF!  Doh!";
 			s.className = "fail";
