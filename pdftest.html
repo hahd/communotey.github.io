@@ -95,10 +95,10 @@ function embed(){
 	var htmlObj = pObj.embed("pdf");	//Returns a reference to the HTML <object> or null if unsuccessful
 	
 	if(htmlObj){
-		msg = "The PDF was successfully embedded!";
+		msg = "<br>Wheeeeeeeeeee!!! It works! Or you can";
 		s.className = "success";
 	} else {
-		msg = "It appears the embed didn't work.";
+		msg = "<br>The embed didn't work. Don't sweat. Just";
 		s.className = "fail";
 	}
 	
@@ -110,7 +110,7 @@ function embed(){
 window.onload = function (){
 
 	var s = document.getElementById("statement");
-	var msg = "The PDF was successfully embedded";
+	var msg = "";
 	
 	if(pObj){
 	
@@ -119,12 +119,12 @@ window.onload = function (){
 		if(plugintype){
 			embed();
 		} else {
-			msg += "<br/>Looks like we won't be able to embed your PDF!  Doh!";
+			msg += "<br>We can't figure out how to embed the file (we're n00bs). Just";
 			s.className = "fail";
 		}
 	
 	}
-	
+	msg +=  " <a href=pObj.url()>download the file here</a>.<br />"
 	s.innerHTML = msg;
 	
 
@@ -134,7 +134,7 @@ window.onload = function (){
 </head>
 
 <body>
-<h1>Embedding a PDF using PDFObject:<br /> 
+<h1>Embedding a PDF using PDFObject:<br> 
 Conditional JavaScript invoked upon successful embed<br />
 (Advanced example)</h1>
 
@@ -142,7 +142,7 @@ Conditional JavaScript invoked upon successful embed<br />
 
 <div id="pdf"></div>
 
-<p><a href="/index.php">&laquo; Return to PDFObject home</a></p>
+<p><a href=pObj.url()>Download Link</a></p>
 
 </body>
 </html>
