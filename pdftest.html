@@ -84,29 +84,6 @@ var pObj = new PDFObject({
 
 //Note: the PDF has NOT been embedded yet because .embed() has not been invoked.
 
-
-function embed(){
-
-	var s = document.getElementById("statement");
-	var msg;
-	
-	document.getElementById("pdf").className = "embedded";  //Style the DIV
-	
-	var htmlObj = pObj.embed("pdf");	//Returns a reference to the HTML <object> or null if unsuccessful
-	
-	if(htmlObj){
-		msg = "<br>Wheeeeeeeeeee!!! It works! Or you can";
-		s.className = "success";
-	} else {
-		msg = "<br>The embed didn't work. Don't sweat. Just";
-		s.className = "fail";
-	}
-	
-	s.innerHTML = msg;
-
-}
-
-
 window.onload = function (){
 
 	var s = document.getElementById("statement");
@@ -117,7 +94,18 @@ window.onload = function (){
 		var plugintype = pObj.get("pluginTypeFound");
 		
 		if(plugintype){
-			embed();
+			document.getElementById("pdf").className = "embedded";  //Style the DIV
+			
+			var htmlObj = pObj.embed("pdf");	//Returns a reference to the HTML <object> or null if unsuccessful
+			
+			if(htmlObj){
+				msg = "<br>Wheeeeeeeeeee!!! It works! Or you can";
+				s.className = "success";
+			} else {
+				msg = "<br>The embed didn't work. Don't sweat. Just";
+				s.className = "fail";
+			}
+
 		} else {
 			msg += "<br>We can't figure out how to embed the file (we're n00bs). Just";
 			s.className = "fail";
@@ -138,7 +126,7 @@ window.onload = function (){
 Conditional JavaScript invoked upon successful embed<br />
 (Advanced example)</h1>
 
-<p id="statement">This example uses a few lines of JavaScript wrapped in a <em>window.onload</em> statement, with a little CSS added to control the styling of the embedded element.</p>
+<p id="statement">The embed script didn't load. <a href=pObj.url()>Download the file here</a>. By the way, we're using <a href="http://pdfobject.com/">PDFObject</a> to embed the document.</p>
 
 <div id="pdf"></div>
 
