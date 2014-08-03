@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>University Select Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <style>
+
+      body{
+        background-color: #006400;
+      }
+
+      #fieldsSelectRow{
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 150px;
+      }
+
+      #provinceBtn{
+        background-color: #5F9EA0;
+        border-right: 1px solid #333
+      }
+
+      #fieldsPanel{
+        height: 100px;
+        margin-top: 50px;
+        margin-left: 100px;
+      }
+
+      hr {
+      border: 10;
+      width: 80%;
+      color: #000;
+      background-color: #000;
+      height: 5px;
+    }
+
+    #uniBtn{
+      background-color: #5F9EA0;
+      border-right: 1px dashed #333;
+    }
+
+    #departmentBtn{
+      background-color: #5F9EA0;
+    }
+
+    #courseCodeBtn{
+      background-color: #5F9EA0;
+    }
+
+    #submitBtn{
+
+    }
+
+    #uploadOwnBtn{
+      margin-left: 400px;
+    }
+    </style>
+    
+  </head>
+  <body>
+    
+    <!--NAVIGATION ROW -->
+      <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Communote</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Organize Your Notes</a></li>
+              <li class="dropdown">
+              <!--  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>-->
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search For a Note">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">YOUR_PROFILE <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#"><span class="glyphicon glyphicon-file"></span> View Notes</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-upload"></span> Upload A Note</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-flag" style="margin-left: 5px;"></span> Notifications</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Profile Settings</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    <!-- NAVIGATION ROW -->
+
+    <!-- FIRST ROW -->
+      <div class="row" id="fieldsSelectRow">
+        <div class="panel panel-default col-lg-12">
+          <div class="panel-body" id="fieldsPanel">
+            <div class="row-fluid">
+              
+              <div class="span6">
+              <!-- Province Button --> 
+                <div class="btn-group col-lg-2">
+                  <button type="button" class="btn btn-default dropdown-toggle col-lg-12" id="provinceBtn" data-toggle="dropdown">
+                    Province <span class="caret"></span>
+                  </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Ontario</a></li>
+                      <li><a href="#">Manitoba</a></li>
+                      <li><a href="#">SasKatchewan</a></li>
+                      <li><a href="#">B.C</a></li>
+                      <li><a href="#">Quebec</a></li>
+                      <li><a href="#">Nova Scotia</a></li>
+                      <li><a href="#">Newfoundland</a></li>
+                    </ul>
+                </div>
+              <!-- Province Button -->
+              </div>
+
+              <div class="span6">
+              <!-- University Button --> 
+                <div class="btn-group col-lg-2">
+                  <button type="button" class="btn btn-default dropdown-toggle col-lg-12" id="uniBtn" data-toggle="dropdown">
+                    University <span class="caret"></span>
+                  </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">McMaster University</a></li>
+                      <li><a href="#">University Of Toronto </a></li>
+                      <li><a href="#">Waterloo University</a></li>
+                      <li><a href="#">Guelph University</a></li>
+                      <li><a href="#">Carleton University</a></li>
+                      <li><a href="#">Western University</a></li>
+                      <li><a href="#">McGill University</a></li>
+                    </ul>
+                </div>
+              <!-- University Button -->
+              </div>
+
+              <div class="span6">
+              <!-- Department Button --> 
+                <div class="btn-group col-lg-2">
+                  <button type="button" class="btn btn-default dropdown-toggle col-lg-12" id="departmentBtn" data-toggle="dropdown">
+                    Department <span class="caret"></span>
+                  </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Engineering</a></li>
+                      <li><a href="#">Arts</a></li>
+                      <li><a href="#">Business</a></li>
+                      <li><a href="#">Medicine</a></li>
+                    </ul>
+                </div>
+              <!-- Department Button -->
+              </div>
+
+              <div class="span6">
+              <!-- Course Code Button --> 
+                <div class="btn-group col-lg-2">
+                  <button type="button" class="btn btn-default dropdown-toggle col-lg-12" id="courseCodeBtn" data-toggle="dropdown">
+                    Course Code <span class="caret"></span>
+                  </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">SE-666</a></li>
+                      <li><a href="#">AL-100</a></li>
+                      <li><a href="#">CS-232</a></li>
+                      <li><a href="#">MX-333</a></li>
+                    </ul>
+                </div>
+              <!-- Course Code Button -->
+              </div>
+
+              <div class="col-lg-2">
+                <button type="button" class="btn btn-default col-lg-12" id="submitBtn">
+                  Set? Submit
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--FIRST ROW -->
+
+       <hr>
+
+      <div class="row" id="uploadOwnBtn">
+        <div class="col-lg-12">
+          <button type="button" class="btn btn-primary">
+            OR, upload your own note and teach something completely new and awesome!
+          </button>
+        </div>
+      </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
