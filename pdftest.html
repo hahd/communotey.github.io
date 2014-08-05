@@ -14,7 +14,7 @@
 }
 
 #pdf.embedded {
-	width: 90%;
+	width: 95%;
 	height: 70%;
 	margin: 2em auto;
 	border: 10px solid #6699FF;
@@ -33,8 +33,8 @@
 	padding: 1em;
 	margin: 1em;
 	border: solid 4px #FFF;
+	font-family: 'Open Sans', sans-serif;
 	font-size: medium;
-	font-weight: bold;
 }
 
 .success {
@@ -84,13 +84,10 @@ var pObj = new PDFObject({
 
 //Note: the PDF has NOT been embedded yet because .embed() has not been invoked.
 
-window.getpdf = function (){
-	return pObj.url();
-}
-
 window.onload = function (){
 
 	var s = document.getElementById("statement");
+	s.className = "fail";
 	var msg = "";
 	
 	if(pObj){
@@ -116,7 +113,7 @@ window.onload = function (){
 		}
 	
 	}
-	msg +=  " <a href=pObj.url()>download the file here</a>."
+	msg +=  " <a href=t1sol.pdf> download the file here</a>."
 	s.innerHTML = msg;
 	
 
@@ -128,11 +125,9 @@ window.onload = function (){
 <body>
 <h1>Testing embedding a PDF using <a href="http://pdfobject.com/">PDFObject</a></h1>
 
-<p id="statement">The embed script didn't load. <a href=""+getpdf()>Download the file here</a>. By the way, we're using <a href="http://pdfobject.com/">PDFObject</a> to embed the document.</p>
+<p id="statement">The embed script didn't load. <a href= "t1sol.pdf">Download the file here</a>. By the way, we're using <a href="http://pdfobject.com/">PDFObject</a> to embed the document.</p>
 
 <div id="pdf"></div>
-
-<p><a href=pObj.url()>Download Link</a></p>
 
 </body>
 </html>
