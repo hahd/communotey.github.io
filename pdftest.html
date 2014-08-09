@@ -9,6 +9,12 @@
 
 <style type="text/css">
 <!--
+A:visited {
+	COLOR: #192E45 /*The color of the visited link*/
+}
+A:link {
+	COLOR: #B8C6A5 /*The color of the link*/
+}
 
 #pdf {
 }
@@ -17,7 +23,7 @@
 	width: 98%;
 	height: 85%;
 	margin: 2em auto;
-	border: 10px solid #6699FF;
+	border: 10px solid #B8C6A5;
 }
 
 #pdf p {
@@ -32,23 +38,33 @@
 #statement {
 	padding: 1em;
 	margin: 1em;
-	border: solid 4px #FFF;
+	border: solid 4px #B8C6A5;
 	font-family: 'Open Sans', sans-serif;
 	font-size: medium;
+	background: #218D80;
+	color: #F6F8D3;
 }
 
 .success {
-	background: #00CC33;
-	color: #FFFFFF;
+	border: none;
+	background: none;
+	color: none;
+}
+
+.temp{
+	background: #218D80;
+	color: #F6F8D3;
 }
 
 .fail {
-	background: #FF3366;
-	color: #FFFFFF;
+	background: #192E45;
+	color: #F6F8D3;
 }
 html, body {
     height: 100%;
+    background-color: #F6F8D3
 }
+
 
 -->
 </style>
@@ -68,21 +84,17 @@ actions with them.  For this example, We'll store the PDFObject obj in 'pObj'
 and the HTML object in htmlObj.
 
 */
-
 var pObj = new PDFObject({ 
 
 	url: "t1sol.pdf",
 	id: "myPDF",
 	
 	pdfOpenParams: {
-	
 		navpanes: 0,
 		toolbar: 0,
 		statusbar: 0,
 		view: "FitV"
-	
 	}
-
 });
 
 //Note: the PDF has NOT been embedded yet because .embed() has not been invoked.
@@ -103,7 +115,7 @@ window.onload = function (){
 			var htmlObj = pObj.embed("pdf");	//Returns a reference to the HTML <object> or null if unsuccessful
 			
 			if(htmlObj){
-				msg = "Wheeeeeeeeeee!!! It works! Or you can";
+				msg = "";
 				s.className = "success";
 			} else {
 				msg = "The embed didn't work. Don't sweat. Just";
@@ -116,7 +128,7 @@ window.onload = function (){
 		}
 	
 	}
-	msg +=  " <a href=t1sol.pdf> download the file here</a>.";
+	msg +=  " <a href=t1sol.pdf>download here</a>.";
 	s.innerHTML = msg;
 	
 
@@ -124,13 +136,13 @@ window.onload = function (){
 	
 </script>
 </head>
-
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <body>
-<h1>Testing embedding a PDF using <a href="http://pdfobject.com/">PDFObject</a></h1>
-
-<p id="statement">The embed script didn't load. <a href= "t1sol.pdf">Download the file here</a>. By the way, we're using <a href="http://pdfobject.com/">PDFObject</a> to embed the document.</p>
 
 <div id="pdf"></div>
+
+<h1 style="font-family: 'Arial', sans-serif;">Testing embedding a PDF using <a href="http://pdfobject.com/">PDFObject</a></h1>
+<p id="statement">The embed script didn't load. <a href= "t1sol.pdf">Download the file here</a>. By the way, we're using <a href="http://pdfobject.com/">PDFObject</a> to embed the document.</p>
 
 </body>
 </html>
