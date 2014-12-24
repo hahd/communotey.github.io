@@ -100,6 +100,12 @@ var pObj = new PDFObject({
 
 window.onload = function (){
 
+	loadFile("t1sol.pdf", "McMaster University - SFWR ENG 3F03 - Test 1 2011 Solutions");
+
+};
+
+function loadFile(file, description){
+
 	var s = document.getElementById("statement");
 	s.className = "fail";
 	var msg = "";
@@ -114,8 +120,9 @@ window.onload = function (){
 			var htmlObj = pObj.embed("pdf");	//Returns a reference to the HTML <object> or null if unsuccessful
 			
 			if(htmlObj){
-				msg = "";
+				msg = description;				
 				s.className = "success";
+
 			} else {
 				msg = "The embed didn't work. Don't sweat. Just";
 				s.className = "fail";
@@ -127,23 +134,20 @@ window.onload = function (){
 		}
 	
 	}
-	msg +=  " <a href=t1sol.pdf>download here</a>.";
+	msg +=  " <a href=" + file + ">download here</a>.";
 	s.innerHTML = msg;
 
-
-
-};
+}
 	
 </script>
 <meta name="description" content="McMaster University - SFWR ENG 3F03 - Test 1 2011 Solutions">
 </head>
-<link href='//fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 <body>
 
 <div id="pdf"></div>
 
 <h1 id="content_title" style="font-family: 'Lato', 'Helvetica Neue', sans-serif;">Testing embedding a PDF using <a href="http://pdfobject.com/">PDFObject</a></h1>
 <p id="statement">The embed script didn't load. <a id="content_link" href= "statsol.pdf">Download the file here</a>. By the way, we're using <a href="http://pdfobject.com/">PDFObject</a> to embed the document.</p>
-<p id="content_description">We're embarrassed and sorry you had to see this.</p>
 </body>
 </html>
