@@ -47,7 +47,6 @@ a:link {
 .success {
 	border: none;
 	background: none;
-	color: #F6F8D3;
 }
 
 .temp{
@@ -100,7 +99,14 @@ var pObj = new PDFObject({
 
 window.onload = function (){
 
-	loadFile("t1sol.pdf", "McMaster University - SFWR ENG 3F03 - Test 1 2011 Solutions");
+	var desc=document.getElementsByName('description')[0].getAttribute('content');
+	if (desc)
+	{}
+	else
+	{
+		desc = "the file, is hosted on communote, the community for notes"
+	}
+	loadFile("t1sol.pdf", desc);
 
 };
 
@@ -109,6 +115,10 @@ function loadFile(file, description){
 	var s = document.getElementById("statement");
 	s.className = "fail";
 	var msg = "";
+
+	document.getElementById("content_title").innerHTML=description;
+	document.getElementById("content_link").href = file
+	document.title=description;
 
 	if(pObj){
 	
@@ -120,7 +130,7 @@ function loadFile(file, description){
 			var htmlObj = pObj.embed("pdf");	//Returns a reference to the HTML <object> or null if unsuccessful
 			
 			if(htmlObj){
-				msg = description;				
+				msg = "Feel free to ";				
 				s.className = "success";
 
 			} else {
