@@ -92,7 +92,7 @@ var pObj = new PDFObject({
 		navpanes: 0,
 		toolbar: 0,
 		statusbar: 0,
-		view: "FitV"
+		view: "FitH"
 	}
 });
 
@@ -134,14 +134,15 @@ window.onload = function (){
 };
 	
 </script>
+<meta name="description" content="McMaster University - SFWR ENG 3F03 - Test 1 2011 Solutions">
 </head>
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 <body>
 
 <div id="pdf"></div>
 
-<h1 style="font-family: 'Lato', 'Helvetica Neue', sans-serif;">Testing embedding a PDF using <a href="http://pdfobject.com/">PDFObject</a></h1>
-<p id="statement">The embed script didn't load. <a href= "t1sol.pdf">Download the file here</a>. By the way, we're using <a href="http://pdfobject.com/">PDFObject</a> to embed the document.</p>
-
+<h1 id="content_title" style="font-family: 'Lato', 'Helvetica Neue', sans-serif;">Testing embedding a PDF using <a href="http://pdfobject.com/">PDFObject</a></h1>
+<p id="statement">The embed script didn't load. <a id="content_link" href= "statsol.pdf">Download the file here</a>. By the way, we're using <a href="http://pdfobject.com/">PDFObject</a> to embed the document.</p>
+<p id="description">We're embarrassed and sorry you had to see this.</p>
 </body>
 </html>
