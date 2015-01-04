@@ -1,4 +1,4 @@
-var PDFObject = function (obj) {
+var ObjectPDF = function (obj) {
     if (!obj || !obj.url) {
         return false;
     }
