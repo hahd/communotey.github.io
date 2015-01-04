@@ -90,7 +90,7 @@ var PDFObject = function (obj) {
     hasGeneric = function () {
         
         //mimeType is "text/html"
-        if((document.contentType=="text/html") && (window.location.href.indexOf(".pdf", this.length - 4) > -1))
+        if((document.contentType=="text/html") && (window.location.href.indexOf(".pdf", this.length - 4)))
             return "html";
         else{   //mimeType is "application/pdf"
             var plugin = navigator.mimeTypes["application/pdf"];
@@ -258,7 +258,7 @@ var PDFObject = function (obj) {
         if (pluginTypeFound == "html"){
             type = "text/html";
         }
-        targetNode.innerHTML = '<object    data="' + url + '" type=' + type + ' width="' + width + '" height="' + height + '"></object>';
+        targetNode.innerHTML = '<object data="' + url + '" type="' + type + '" width="' + width + '" height="' + height + '"></object>';
 
         return targetNode.getElementsByTagName("object")[0];
 
