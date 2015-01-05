@@ -103,12 +103,11 @@ var pObj = new ObjectPDF({
 window.onload = function (){
 
 	var desc=document.getElementsByName('description')[0].getAttribute('content');
-	if (desc)
-	{}
-	else
+	if (!desc)
 	{
 		desc = "the file, is hosted on communote, the community for notes";
 	}
+
 	loadFile(pObj, desc);
 
 };
@@ -146,7 +145,7 @@ function loadFile(file, description){
 			s.className = "fail";
 		}	
 	}
-	msg +=  ' <a href="' + file + '">download here</a>.';
+	msg +=  ' <a href="' + file.get("url") + '">download here</a>.';
 	s.innerHTML = msg;
 
 };
