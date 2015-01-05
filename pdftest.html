@@ -119,17 +119,17 @@ function loadFile(file, description){
 	var msg = "";
 
 	document.getElementById("content_title").innerHTML=description;
-	document.getElementById("content_link").href = file;
+	document.getElementById("content_link").href = file.get("url");
 	document.title=description;
 
-	if(pObj){
+	if(file){
 	
-		var plugintype = pObj.get("pluginTypeFound");
+		var plugintype = file.get("pluginTypeFound");
 		
 		if(plugintype){
 			document.getElementById("pdf").className = "embedded";  //Style the DIV
 			
-			var htmlObj = pObj.embed("pdf");	//Returns a reference to the HTML object or null if unsuccessful
+			var htmlObj = file.embed("pdf");	//Returns a reference to the HTML object or null if unsuccessful
 			
 			if(htmlObj){
 				msg = "Feel free to ";				
