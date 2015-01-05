@@ -88,11 +88,18 @@ var ObjectPDF = function (obj) {
 
     //Detects unbranded PDF support
     hasGeneric = function () {
-        
-        //mimeType is "text/html"
-        if((document.contentType=="text/html") && (window.location.href.indexOf(".pdf", this.length - 4)))
-            return "html";
-        else{   //mimeType is "application/pdf"
+
+        var mimeCheck = function () {
+            return Array.prototype.reduce.call(navigator.plugins, function (supported, plugin) {
+                return supported || Array.prototype.reduce.call(plugin, function (supported, mime) {
+                    return supported || mime.type == "application/pdf";
+                }, supported);
+            }, false);
+        };
+
+        if (!mimeCheck()) //mimeType is "text/html"
+        return "html";
+        else { //mimeType is "application/pdf"
             var plugin = navigator.mimeTypes["application/pdf"];
             return (plugin && plugin.enabledPlugin);
         }
@@ -109,9 +116,9 @@ var ObjectPDF = function (obj) {
 
             type = "Adobe";
 
-        } else{
+        } else {
             var plugin = hasGeneric();
-            if (plugin){
+            if (plugin) {
                 if (plugin == "html") {
                     return plugin;
                 }
@@ -152,7 +159,7 @@ var ObjectPDF = function (obj) {
     //Creating a querystring for using PDF Open parameters when embedding PDF
     buildQueryString = function (pdfParams) {
 
-        var string = "", 
+        var string = "",
             prop;
 
         if (!pdfParams) {
@@ -255,7 +262,7 @@ var ObjectPDF = function (obj) {
         }
         var type = "application/pdf";
 
-        if (pluginTypeFound == "html"){
+        if (pluginTypeFound == "html") {
             type = "text/html";
         }
         targetNode.innerHTML = '<object data="' + url + '" type="' + type + '" width="' + width + '" height="' + height + '"></object>';
