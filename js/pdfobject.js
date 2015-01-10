@@ -98,7 +98,7 @@ var ObjectPDF = function (obj) {
         };
 
         if (!mimeCheck()) //mimeType is "text/html"
-        return "html";
+            return "html";
         else { //mimeType is "application/pdf"
             var plugin = navigator.mimeTypes["application/pdf"];
             return (plugin && plugin.enabledPlugin);
