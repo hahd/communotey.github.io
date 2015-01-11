@@ -264,7 +264,7 @@ var PDF_Object = function (obj) {
 
         if (pluginTypeFound == "html") {
             type = "text/html";
-            url = "viewer.html?file="+url;
+            url = "pdfjs/web/viewer.html?file="+url;
         }
         targetNode.innerHTML = '<object data="' + url + '" type="' + type + '" width="' + width + '" height="' + height + '"></object>';
 
