@@ -9,66 +9,7 @@
 <title>Our first file! Woot woot!</title>
 
 <!-- This example created for PDFObject.com by Philip Hutchison (www.pipwerks.com) -->
-
-<style type="text/css">
-<!--
-a:visited {
-	COLOR: #192e45 /*The color of the visited link*/
-}
-a:link {
-	COLOR: #218d80 /*The color of the link*/
-}
-
-#pdf {
-}
-
-#pdf.embedded {
-	width: 98%;
-	height: 85%;
-	margin: 2em auto;
-	border: 10px solid #6abeb1;
-}
-
-#pdf p {
-   padding: 1em;
-}
-
-#pdf object {
-   display: block;
-   border: solid 1px #666;
-}
-
-#statement {
-	padding: 1em;
-	margin: 1em;
-	border: solid 4px #6abeb1;
-	font-family: 'Lato', "Helvetica Neue", sans-serif;
-	font-size: medium;
-	background: #b8c6a5;
-}
-
-.success {
-	border: none;
-	background: none;
-}
-
-.temp{
-	background: #218d80;
-	color: #f6f8d3;
-}
-
-.fail {
-	background: #192e45;
-	color: #f6f8d3;
-}
-html, body {
-    height: 100%;
-    background-color: #f6f8d3
-}
-
-
--->
-</style>
+<link rel="stylesheet" href="css/pdfobject.css"/>
 
 <script type="text/javascript" src="js/pdfobject.js"></script>
 
@@ -87,7 +28,7 @@ and the HTML object in htmlObj.
 */
 var pObj = new PDF_Object({ 
 
-	url: "https://communotey.github.io/t1sol.pdf",
+	url: "statsol.pdf",
 	id: "myPDF",
 	
 	pdfOpenParams: {
@@ -105,7 +46,7 @@ window.onload = function (){
 	var desc=document.getElementsByName('description')[0].getAttribute('content');
 	if (!desc)
 	{
-		desc = "the file, is hosted on communote, the community for notes";
+		desc = "Testing the Best PDF Embedder Yet - PDFObject2";
 	}
 
 	loadFile(pObj, desc);
