@@ -264,7 +264,10 @@ var PDF_Object = function (obj) {
 
         if (pluginTypeFound == "html") {
             type = "text/html";
-            url = "pdfjs/web/viewer.html?file=../../"+url;
+            url = "pdfjs/web/viewer.html?file=../../"+url + "#zoom=page-width";
+        }
+        else{
+            url = url + "#" + buildQueryString(pdfOpenParams)
         }
         targetNode.innerHTML = '<object data="' + url + '" type="' + type + '" width="' + width + '" height="' + height + '"></object>';
 
@@ -274,7 +277,7 @@ var PDF_Object = function (obj) {
 
     //The hash (#) prevents odd behavior in Windows
     //Append optional Adobe params for opening document
-    url = encodeURI(obj.url) + "#" + buildQueryString(pdfOpenParams);
+    url = encodeURI(obj.url);
     pluginTypeFound = pluginFound();
 
     this.get = function (prop) {
