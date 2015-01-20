@@ -912,7 +912,7 @@ html[dir='rtl'] .dropdownToolbarButton {
 }
 
 .dropdownToolbarButton > select > option {
-  background: hsl(0,0%,24%);
+  background: #192E45;
 }
 
 #customScaleOption {
@@ -1407,11 +1407,11 @@ html[dir='rtl'] .attachmentsItem > button {
 /* TODO: file FF bug to support ::-moz-selection:window-inactive
    so we can override the opaque grey background when the window is inactive;
    see https://bugzilla.mozilla.org/show_bug.cgi?id=706209 */
-::selection { background: rgba(0,0,255,0.3); }
-::-moz-selection { background: rgba(0,0,255,0.3); }
+::selection { background: #6ABEB1; }
+::-moz-selection { background: #6ABEB1; }
 
-.textLayer ::selection { background: rgb(0,0,255); }
-.textLayer ::-moz-selection { background: rgb(0,0,255); }
+.textLayer ::selection { background: #6ABEB1; }
+.textLayer ::-moz-selection { background: #6ABEB1; }
 .textLayer {
   opacity: 0.2;
 }
@@ -2043,4 +2043,8 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
 }
 #mozPrintCallback-shim .progress-actions {
   clear: both;
+}
+
+#viewer_properties{
+  font-family: 'Josefin Sans', sans-serif;
 }
