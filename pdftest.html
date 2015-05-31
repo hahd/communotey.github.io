@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="css/pdfobject.css"/>
 
 <script type="text/javascript" src="js/pdfobject.js"></script>
-
+<script type="text/javascript" src="js/loadFile.js"></script>
 <script type="text/javascript">
 
 
@@ -28,7 +28,7 @@ and the HTML object in htmlObj.
 */
 var pObj = new PDF_Object({ 
 
-	url: "t1sol.pdf",
+	url: "http://www.soniclight.com/constable/notes/pdf/2peter.pdf",
 	id: "myPDF",
 	
 	pdfOpenParams: {
@@ -52,44 +52,6 @@ window.onload = function (){
 	loadFile(pObj, desc);
 
 };
-
-function loadFile(file, description){
-
-	var s = document.getElementById("statement");
-	s.className = "fail";
-	var msg = "";
-
-	document.getElementById("content_title").innerHTML=description;
-	document.getElementById("content_link").href = file.get("url");
-	document.title=description;
-
-	if(file){
-	
-		var plugintype = file.get("pluginTypeFound");
-		
-		if(plugintype){
-			document.getElementById("pdf").className = "embedded";  //Style the DIV
-			
-			var htmlObj = file.embed("pdf");	//Returns a reference to the HTML object or null if unsuccessful
-			
-			if(htmlObj){
-				msg = "Feel free to ";				
-				s.className = "success";
-
-			} else {
-				msg = "The embed didn't work. Don't sweat. Just";
-				s.className = "fail";
-			}
-
-		} else {
-			msg += "We can't figure out how to embed the file (we're n00bs). Just";
-			s.className = "fail";
-		}	
-	}
-	msg +=  ' <a href="' + file.get("url") + '">download here</a>.';
-	s.innerHTML = msg;
-
-};
 	
 </script>
 </head>
@@ -98,5 +60,27 @@ function loadFile(file, description){
 
 <h1 id="content_title" style="font-family: 'Lato', 'Helvetica Neue', sans-serif;">Testing embedding a PDF using <a href="http://pdfobject.com/">PDFObject</a></h1>
 <p id="statement">The embed script didn't load. <a id="content_link" href= "statsol.pdf">Download the file here</a>. By the way, we're using <a href="http://pdfobject.com/">PDFObject</a> to embed the document.</p>
+
+<!-- START: Livefyre Embed -->
+<div id="livefyre-comments"></div>
+<script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+<script type="text/javascript">
+(function () {
+    var articleId = fyre.conv.load.makeArticleId(null);
+    fyre.conv.load({}, [{
+        el: 'livefyre-comments',
+        network: "livefyre.com",
+        siteId: "363786",
+        articleId: articleId,
+        signed: false,
+        collectionMeta: {
+            articleId: articleId,
+            url: fyre.conv.load.makeCollectionUrl(),
+        }
+    }], function() {});
+}());
+</script>
+<!-- END: Livefyre Embed -->
+
 </body>
 </html>
