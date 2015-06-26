@@ -6,7 +6,7 @@ var PDF_Object = function (obj) {
     var pdfobjectversion = "1.2",
         //Set reasonable defaults
         id = obj.id || false,
-        width = obj.width || "100vw",
+        width = obj.width || "100%",
         height = obj.height || "100%",
         pdfOpenParams = obj.pdfOpenParams,
         url,
@@ -256,7 +256,7 @@ var PDF_Object = function (obj) {
 
             targetNode = document.body;
             setCssForFullWindowPdf();
-            width = "100vw";
+            width = "100%";
             height = "100%";
 
         }
