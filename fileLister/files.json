@@ -1,0 +1,53 @@
+
+
+var chicken = [
+{
+"authors": ["Rajat Arora", "Kemal Ahmed"], 
+"url": "https://s3.amazonaws.com/communote-2/original_Welcome_Week_Spread_2014.pdf", "version": 2,
+"modified":  "2015-03-16T23:42:58Z",  
+"pages": 5, 
+"words": 1303,
+"created": "2015-03-13T23:42:58Z", 
+ "volume": 2, 
+"title": "The Ending of the Earth", 
+"version": "A", 
+"solution": "false",
+"mentors": ["Iftach Or", "Justin Beatty"], 
+"type": "Test", 
+"upvotes": 234, 
+"score": 199
+},
+    {
+"authors": ["Rajat Arora", "Kemal Ahmed"], 
+"url": "https://s3.amazonaws.com/communote-2/original_Welcome_Week_Spread_2014.pdf", "version": 2,
+"modified":  "2015-03-16T23:42:58Z",  
+"pages": 5, 
+"words": 1303,
+"created": "2015-03-13T23:42:58Z", 
+ "volume": 2, 
+"title": "The never Ending Story", 
+"version": "A", 
+"solution": "false",
+"mentors": ["Iftach Or", "Justin Beatty"], 
+"type": "Lecture", 
+"upvotes": 234, 
+"score": 199
+},
+    {
+"authors": ["Rajat Arora", "Kemal Ahmed"], 
+"url": "https://s3.amazonaws.com/communote-2/original_Welcome_Week_Spread_2014.pdf", "version": 2,
+"modified":  "2015-03-16T23:42:58Z",  
+"pages": 5, 
+"words": 1303,
+"created": "2015-03-13T23:42:58Z", 
+ "volume": 2, 
+"title": "How to Dance 101", 
+"version": "A", 
+"solution": "false",
+"mentors": ["Iftach Or", "Justin Beatty"], 
+"type": "Notes", 
+"upvotes": 234, 
+"score": 199
+}
+    
+    ];
