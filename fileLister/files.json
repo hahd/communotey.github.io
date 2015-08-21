@@ -8,14 +8,15 @@ var chicken = [
 "pages": 5, 
 "words": 1303,
 "created": "2015-03-13T23:42:58Z", 
- "volume": 2, 
+"volume": 2, 
 "title": "The Ending of the Earth", 
 "version": "A", 
 "solution": "false",
 "mentors": ["Iftach Or", "Justin Beatty"], 
 "type": "Test", 
 "upvotes": 234, 
-"score": 199
+"score": 199,
+"schedule": "Winter"
 },
     {
 "authors": ["Rajat Arora", "Kemal Ahmed"], 
@@ -31,7 +32,8 @@ var chicken = [
 "mentors": ["Iftach Or", "Justin Beatty"], 
 "type": "Lecture", 
 "upvotes": 234, 
-"score": 199
+"score": 199,
+"schedule": "Winter"
 },
     {
 "authors": ["Rajat Arora", "Kemal Ahmed"], 
@@ -47,7 +49,8 @@ var chicken = [
 "mentors": ["Iftach Or", "Justin Beatty"], 
 "type": "Notes", 
 "upvotes": 234, 
-"score": 199
+"score": 199,
+"schedule": "Winter"
 }
     
     ];
