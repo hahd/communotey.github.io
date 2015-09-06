@@ -53,7 +53,6 @@
         
         #topContainer {
             background-size: cover;
-            background-color: aqua;
         }
         
         #loader {
@@ -67,6 +66,63 @@
             width: 100px;
             height: 100px;
             text-align: center;
+        }
+        
+        .dropdown {
+            border: 1px solid #ccc;
+            width: 300px;
+        }
+        
+        .dropdown-menu>li>a {
+            color: #428bca;
+        }
+        
+        .dropdown ul.dropdown-menu {
+            border-radius: 4px;
+            box-shadow: none;
+            width: auto;
+        }
+        
+        .dropdown ul.dropdown-menu:before {
+            content: "";
+            border-bottom: 10px solid #fff;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+            position: absolute;
+            top: -10px;
+            right: 16px;
+            z-index: 10;
+        }
+        
+        .dropdown ul.dropdown-menu:after {
+            content: "";
+            border-bottom: 12px solid #ccc;
+            border-right: 12px solid transparent;
+            border-left: 12px solid transparent;
+            position: absolute;
+            top: -12px;
+            right: 14px;
+            z-index: 9;
+        }
+        
+        #search_container {
+            text-align: center;
+            margin-top: 5px;
+        }
+        
+        #searchbar .form-control {
+            transition: width 0.2s ease-in-out;
+            display: inline-block;
+            margin: auto;
+        }
+        
+        #searchbar .form-control:focus {
+            width: 260px;
+        }
+        
+        #search_container {
+            text-align: center;
+            margin: auto;
         }
     </style>
 </head>
@@ -91,30 +147,32 @@
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Link</a></li>
-                </ul>
+
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <form class="navbar-form navbar-left" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-search large"></button>
+
+
+                <div id="search_container">
+                    <form class="navbar-form navbar-left" role="search" id="searchbar">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-search large"></button>
                           </span>
-                </form>
+                    </form>
+                </div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <p class="navbar-text">Signed in as <a href="#" class="navbar-link">Kemal Ahmed</a></p>
-                    </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <img alt="profileImage" id="profilePic" src="https://0.gravatar.com/avatar/6275d97cde41c8c0d2f0941caf42abf7?s=50"> <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kemal Ahmed <span class="glyphicon glyphicon-user pull-right"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Settings</a></li>
-                            <li><a href="#">Files</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Logout</a></li>
+                            <li><a href="#">Account Settings <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"> File Analytics <span class="glyphicon glyphicon-stats pull-right"></span></a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Messages <span class="badge pull-right"> 42 </span></a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Favourite Files <span class="glyphicon glyphicon-heart pull-right"></span></a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Sign Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
                         </ul>
                     </li>
                 </ul>
