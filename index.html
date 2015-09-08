@@ -1,8 +1,270 @@
-<!DOCTYPE html>
+<!doctype html>
+<html>
 <head>
-	    <link href="css/bootstrap.css" rel="stylesheet">
+  	<title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Lato|Josefin+Sans' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+	
+	body{
+		margin:0;
+		background:url(Front%20Page%20Images/Chalkboard%20Backdrop.jpg);
+	}
+
+	.topbar {
+		height: 75px;
+		width:100%;
+			
+		
+		background-color:#192E45;
+		
+		font-family: Montserrat, Lato, Effra;
+				
+	}
+	
+	.fixedwidth{
+		width:1200px;
+		margin:0 auto;	
+	}
+	
+	
+	#logo{
+		height:45px;
+		
+		margin-top:15px;
+		
+		float:left;	
+	}
+	
+	#searchDiv input{
+		width:350px;
+		
+		margin:29px 0 0 30px;
+		
+		float: left;
+		
+		background:url(Front%20Page%20Images/Search%20Magnifier.jpg);
+		background-size: 16px 16px;
+		background-repeat:no-repeat;
+		background-position: 10px 50% ;
+		background-color:#F6F8D3;
+		
+		border:2px solid #B8C6A5;
+		border-radius:5px;
+		
+		
+		color:#B8C6A5;
+		font-size:0.9em;
+		font-weight: bold;
+		padding-left:35px;
+		
+	}
+	
+	#topmenulist ul{
+		float: left;
+		
+		margin: 18px 0 0 180px;	
+	}
+	
+	#topmenulist li{
+		list-style: none;
+		
+		float:left;
+		color:white;
+		
+		padding-right:26px;
+	}
+	
+	#topmenulist li:hover{
+		color:#F6F8D3;
+	}
+	
+	.jumbotron{
+		position:relative;
+			
+	}
+	
+	.jumbotron img{
+		position:absolute;
+		width:1200px;
+	}
+	
+	#transparency {
+		height:309px;
+		width:524px;
+		
+		background-color:#218D80;
+		opacity:0.6;
+		
+		position:absolute;
+		top:15px;
+		left:15px;
+		
+	}
+	
+	#fullLogo{
+		position:absolute;
+		top:31px;
+		left:31px;	
+	}
+	
+	#fullLogo img{
+		width:462px;
+	}
+	
+	#slogan {
+		position:relative;
+		width:430px;
+			
+	}
+	
+	#slogan h3 {
+		color:white;
+		font-family:Lato, Effra;
+		text-align:center;
+		
+		padding:0;
+		margin:0;
+		
+		position:relative;
+		left:55px;
+		top:150px;
+		
+	}
+	
+	.navbar{
+		width:1200px;
+		height:75px;
+		margin:0;
+		padding:0;
+		
+		background-color:#192E45;
+		
+		position:relative;
+		top:640px;	
+		
+		font-family:"Josefin Sans";
+		color:white;		
+		
+	}
+	
+	.navbar ul{
+		float:left;
+		padding:0;
+		margin:0 0 0 130px;	
+	}
+	
+	.navbar li{
+		list-style: none;
+		
+		float:left;
+		padding-right:120px;
+		padding-top:18px;
+		
+	}
+	
+		
+	.navbar li:hover{
+		color:#F6F8D3;
+		font-weight:bold;
+	}
+	
+	#mission{
+		position: relative;
+		top:640px;
+	
+
+
+	
+	
+
+    </style>    
 </head>
+
 <body>
-	<img src="images/MockUpWebPage.png" width=100%>
+
+<div class="container">
+
+	<div class="topbar">
+    	
+        <div class="fixedwidth">
+        
+        	<img id="logo" src="Front Page Images/Logo.jpg"/>
+            
+            <div id="searchDiv">
+            	<input type="text" placeholder="Search" />
+            </div>
+            
+          	<div id="topmenulist">
+            	<ul>
+                	<li>Advanced Search</li>
+                    <li>Login</li>
+                    <li>Sign Up</li>
+                </ul>
+         	</div>  
+        
+        </div>
+
+	</div>
+    
+	
+  <div class="fixedwidth">
+        
+        <div class="jumbotron">
+          	<img src="Front Page Images/Jumbotron.jpg"/>
+            
+            <div id="transparency"></div> 
+        	
+            <div id="fullLogo">
+        		<img src="Front Page Images/fullLogo.png" />	
+        	</div> 
+            
+            <div id="slogan">
+            	<h3> "The world is cluttered with knowledge, we put it <br> all at your fingertips" </h3>
+            </div>
+                              
+        </div>
+        
+        <div class="navbar">
+			<ul>
+            	<li>WHAT IS <br> COMMUNOTE</li>
+                <li>OUR<br> MISSION</li>
+                <li>START <br>LEARNING</li>
+                <li>HEAR<br> FROM OUR USERS</li>
+                <li>LEARN <br>MORE</li>
+            
+            </ul>
+        </div>
+        
+        
+		<div class="jumbotron">
+        	
+            <img id = "mission" src="Front Page Images/Our Mission.jpg"/>
+            
+        </div>
+
+
+
+  </div>
+
+
+
+
+
+	
+
+</div>
+
+
+
+
+
+
+
+
+</body>
 </html>
 
