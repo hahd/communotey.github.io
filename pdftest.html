@@ -27,9 +27,10 @@ actions with them.  For this example, We'll store the PDFObject obj in 'pObj'
 and the HTML object in htmlObj.
 
 */
+var link = "pdfwithads.pdf";
 var pObj = new PDF_Object({ 
 
-	url: "pdfwithads.pdf",
+	url: link,
 	id: "myPDF",
 	
 	pdfOpenParams: {
@@ -83,6 +84,8 @@ window.onload = function (){
 }());
 </script>
 <!-- END: Livefyre Embed -->
-
+<script>
+	document.getElementById('content_link').href= link;
+</script>
 </body>
 </html>
